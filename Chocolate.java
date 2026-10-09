@@ -32,6 +32,7 @@ public class Chocolate extends MenuLitem {
             price = price + 0.80;
         }
         return price;
+    }
 
     @Override
     public String toString() {
