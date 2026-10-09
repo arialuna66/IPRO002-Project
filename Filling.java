@@ -1,0 +1,8 @@
+public enum Filling {
+    HAZELNUT,ALMOND,PISTACHIO,CARAMEL,LIQUEUR,ALCOHOLIC,NONE
+}
+
+
+
+
+

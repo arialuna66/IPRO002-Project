@@ -1,0 +1,3 @@
+public enum Shape {
+    TRUFFLE,DOME,SQUARE,OVAL,BAR,CUSTOMSHAPE
+}
