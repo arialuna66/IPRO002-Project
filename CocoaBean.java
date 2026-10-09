@@ -1,38 +1,42 @@
 public class CocoaBean {
+    private int ID;
     private String name;
-    private String origin;
-    private String farm;
-    private String flavourNotes;
-    private String cocoaPercentage;
+    private String supplyCountry;
+    private int cocoaPercentage;
+    private boolean vipOnly;
 
-    public CocoaBean(String name, String origin, String farm,String flavourNotes, int cocoaPercentage) {
+
+    public CocoaBean(int ID,String name, String supplyCountry,int cocoaPercentage) {
+        this.ID = ID;
         this.name = name;
-        this.orgin = origin;
-        this.farm = farm;
-        this.flavourNotes = flavourNotes;
+        this.supplyCountry = supplyCountry;
         this.cocoaPercentage =cocoaPercentage;
+        this.vipOnly = vipOnly;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getOrigin() {
-        return origin;
+    public String getSupplyCountry() {
+        return supplyCountry;
     }
 
-    public String getFarm() {
-        return farm;
+    public int getID() {
+        return ID;
     }
-
-    public String getFlavourNotes() {
-        return flavourNotes;
+    public int getCocoaPercentage() {
+        return cocoaPercentage;
+    }
+    public boolean vipOnly() {
+        return vipOnly;
     }
 
     
+    
 @Override
 public String toString() {
-    return name + "from" + origin + "(" + farm + ")" + flavourNotes;
+    return name + "from" + supplyCountry + "(" + cocoaPercentage + "%)";
 }
 
 }
