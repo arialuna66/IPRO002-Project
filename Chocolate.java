@@ -1,13 +1,15 @@
-public class Chocolate extends MenuLitem {
+public class Chocolate extends MenuItem {
+    private int id;
     private ChocolateType type;
     private String filling;
     private int cocoaPercentage;
 
-    public Chocolate (String name,double basePrice, String filling) {
+    public Chocolate (int id,String name,double basePrice, String type,String filling) {
         super(name, basePrice);
+        this.id = id;
         this.type = type;
         this.filling = filling;
-        this.cocoaPercentage = cocoaPercentage;
+        
     }
 
     public ChocolateType getType() {
@@ -20,6 +22,10 @@ public class Chocolate extends MenuLitem {
     
     public int getCocoaPercentage() {
         return cocoaPercentage;
+    }
+
+    public int getId() {
+        return id;
     }
     @Override
     public double getPrice() {
@@ -36,6 +42,7 @@ public class Chocolate extends MenuLitem {
 
     @Override
     public String toString() {
-        return name + " (" + getType() + ")" + getPrice();
+        return "[" + id + "]" + getName() + " (" + getType() + ")" + getPrice();
     }
+    
 }
